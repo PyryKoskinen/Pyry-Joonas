@@ -191,14 +191,14 @@ nav ul li a:hover {
 
 /* Logon muotoilu */
 .logo-box {
-    padding: 10px; /* Sama padding kuin muilla laatikoilla */
+    padding: 10px; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .nav-logo {
-    width: 90px; /* Tee logosta sopiva */
+    width: 90px;
     height: auto;
 }
 
@@ -313,66 +313,66 @@ h1 {
     position: relative;
     text-align: center;
     color: white;
-    overflow: hidden; /* Varmistaa, että kuva ei vuoda ulos */
-    height: 45vh; /* Pienennetään hero-osan korkeutta */
+    overflow: hidden; 
+    height: 45vh; 
     display: flex;
-    flex-direction: column; /* Asetetaan sisältö pystysuoraan */
+    flex-direction: column; 
     align-items: center;
-    justify-content: flex-start; /* Siirtää sisällön ylös */
-    width: 100%; /* Varmistaa, että hero-osa täyttää koko leveyden */
-    margin: 0; /* Poistaa marginaalit */
-    padding: 0; /* Poistaa paddingin */
-    padding-top: 10px; /* Lisää tilaa sivuston yläreunan ja kuvan väliin */
+    justify-content: flex-start; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
+    padding-top: 10px;
 }
 
 .hero-image {
-    max-width: 85%; /* Kuva ei ylitä hero-osan leveyttä */
-    max-height: 85%; /* Kuva ei ylitä tiettyä korkeutta */
-    object-fit: contain; /* Säilyttää kuvan mittasuhteet eikä täytä aluetta */
-    margin-bottom: 5px; /* Lisää tilaa kuvan ja tekstin väliin */
+    max-width: 85%;
+    max-height: 85%; 
+    object-fit: contain;
+    margin-bottom: 5px;
 }
 
 .hero-text {
-    font-size: 1.4em; /* Pienennetään tekstin kokoa */
+    font-size: 1.4em;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    position: relative; /* Teksti on nyt hero-osan sisällä eikä mene kuvan yli */
-    z-index: 1; /* Varmistaa, että teksti on kuvan päällä */
-    padding: 15px; /* Pienempi padding */
-    background-color: rgba(0, 0, 0, 0.4); /* Vähemmän tumma tausta */
-    border-radius: 10px; /* Pyöristetyt kulmat */
-    text-align: center; /* Varmistaa, että teksti on keskitetty */
-    width: 32%; /* Pienempi leveys */
-    max-height: 100px; /* Rajoittaa korkeutta */
+    position: relative; 
+    z-index: 1; 
+    padding: 15px; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-radius: 10px; 
+    text-align: center; 
+    width: 32%; 
+    max-height: 100px; 
     overflow: hidden;
 }
 
 .hero-link {
-    color: rgb(5, 5, 5); /* Linkin väri valkoinen */
-    text-decoration: none; /* Poistaa alaviivan linkistä */
-    font-size: 1.2em; /* Pienennetään linkin tekstin kokoa */
+    color: rgb(5, 5, 5); 
+    text-decoration: none; 
+    font-size: 1.2em; 
 }
 
 .hero-link:hover {
-    text-decoration: underline; /* Lisää alaviivan hover-tilassa */
+    text-decoration: underline; 
 }
 
 /* Responsiivisuus pienemmillä näytöillä */
 @media (max-width: 768px) {
     .hero-text {
-        font-size: 1em; /* Pienempi fonttikoko mobiililaitteilla */
+        font-size: 1em; 
     }
     .hero-link {
-        font-size: 1em; /* Pienempi fonttikoko mobiililaitteilla */
+        font-size: 1em; 
     }
 }
 
 @media (max-width: 480px) {
     .hero-text {
-        font-size: 0.9em; /* Vielä pienempi fonttikoko hyvin pienillä näytöillä */
+        font-size: 0.9em; 
     }
     .hero-link {
-        font-size: 0.9em; /* Vielä pienempi fonttikoko hyvin pienillä näytöillä */
+        font-size: 0.9em;
     }
 }
 
