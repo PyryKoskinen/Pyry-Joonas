@@ -1,0 +1,383 @@
+
+/* Sivun taustaväri */
+body {
+    background-color: #CEECF5; 
+    font-family: "Times New Roman", Georgia, serif;
+    color: #000000; 
+    line-height: 1.6; 
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+/* Kontaineri, joka pitää yhteystiedot ja lomakkeen rinnakkain */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Yhteystiedot vasemmalla */
+.contact-info {
+    flex: 1;
+    padding: 40px;
+    background: #FFEFBF;
+    border-left: 5px solid #FFB833;
+    border-radius: 5px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.contact-info p {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%; 
+}
+
+/* Lomake oikealla */
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.contact-form p {
+    text-align: left; 
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%; 
+}
+
+/* Lomakekentät */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+/* Lähetä-painike */
+.submit-btn {
+    background-color: #FFD166;
+    color: #2A2A2A;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #FFB833;
+}
+
+/* Footer pysyy alareunassa */
+footer {
+    background-color: #FFB833;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+}
+
+/* Sosiaalisten medioiden ikonit */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px;
+    transition: 0.3s ease;
+}
+
+.social-icons img:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Responsiivisuus mobiililaitteille */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+}
+
+nav {
+    text-align: center;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+}
+
+/* Navigaatiolaatikot */
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 30px;
+    background: #FFB833;
+    color: #000;
+    border-radius: 10px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Aktiivinen sivu */
+nav ul li a.active {
+    background: #FFEFBF;
+}
+
+nav ul li a:hover {
+    background: #FFA500;
+}
+
+/* Logon muotoilu */
+.logo-box {
+    padding: 10px; /* Sama padding kuin muilla laatikoilla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 90px; /* Tee logosta sopiva */
+    height: auto;
+}
+
+img { /*määritetään kuville maksimi koko ja asetetaan kuva keskelle sivustoa ja väli alempaan elementtiin */
+    max-width: 600px;
+    max-height: 400px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+
+
+}
+@media (max-width: 800px) {
+  img {
+    max-width: 100%;
+  }
+}
+p { /*Asetetaan elementti keskelle ruutua ja elementin leveys on 60% sivusta*/
+    text-align: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.varaa-btn {
+    background-color: #FFD166;
+    color: #2A2A2A;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    width: fit-content;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.varaa-btn:hover {
+    background-color: #FFB833;
+}
+/* Responsiivisuus mobiililaitteille */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; 
+        margin: 20px auto; 
+        padding: 15px; 
+        gap: 15px; 
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        padding: 20px; 
+    }
+
+    .contact-info h3, .contact-form h2 {
+        font-size: 20px; 
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        padding: 10px; 
+    }
+
+    .submit-btn {
+        padding: 10px 15px; 
+        font-size: 14px; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    nav ul li a {
+        padding: 10px 20px; 
+    }
+
+    .nav-logo {
+        width: 70px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    p {
+        max-width: 90%;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+/* Otsikon tyylit */
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+/* Hero-osan tyylit */
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden; /* Varmistaa, että kuva ei vuoda ulos */
+    height: 45vh; /* Pienennetään hero-osan korkeutta */
+    display: flex;
+    flex-direction: column; /* Asetetaan sisältö pystysuoraan */
+    align-items: center;
+    justify-content: flex-start; /* Siirtää sisällön ylös */
+    width: 100%; /* Varmistaa, että hero-osa täyttää koko leveyden */
+    margin: 0; /* Poistaa marginaalit */
+    padding: 0; /* Poistaa paddingin */
+    padding-top: 10px; /* Lisää tilaa sivuston yläreunan ja kuvan väliin */
+}
+
+.hero-image {
+    max-width: 85%; /* Kuva ei ylitä hero-osan leveyttä */
+    max-height: 85%; /* Kuva ei ylitä tiettyä korkeutta */
+    object-fit: contain; /* Säilyttää kuvan mittasuhteet eikä täytä aluetta */
+    margin-bottom: 5px; /* Lisää tilaa kuvan ja tekstin väliin */
+}
+
+.hero-text {
+    font-size: 1.4em; /* Pienennetään tekstin kokoa */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative; /* Teksti on nyt hero-osan sisällä eikä mene kuvan yli */
+    z-index: 1; /* Varmistaa, että teksti on kuvan päällä */
+    padding: 15px; /* Pienempi padding */
+    background-color: rgba(0, 0, 0, 0.4); /* Vähemmän tumma tausta */
+    border-radius: 10px; /* Pyöristetyt kulmat */
+    text-align: center; /* Varmistaa, että teksti on keskitetty */
+    width: 32%; /* Pienempi leveys */
+    max-height: 100px; /* Rajoittaa korkeutta */
+    overflow: hidden;
+}
+
+.hero-link {
+    color: rgb(5, 5, 5); /* Linkin väri valkoinen */
+    text-decoration: none; /* Poistaa alaviivan linkistä */
+    font-size: 1.2em; /* Pienennetään linkin tekstin kokoa */
+}
+
+.hero-link:hover {
+    text-decoration: underline; /* Lisää alaviivan hover-tilassa */
+}
+
+/* Responsiivisuus pienemmillä näytöillä */
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 1em; /* Pienempi fonttikoko mobiililaitteilla */
+    }
+    .hero-link {
+        font-size: 1em; /* Pienempi fonttikoko mobiililaitteilla */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text {
+        font-size: 0.9em; /* Vielä pienempi fonttikoko hyvin pienillä näytöillä */
+    }
+    .hero-link {
+        font-size: 0.9em; /* Vielä pienempi fonttikoko hyvin pienillä näytöillä */
+    }
+}
+
+
+h4 {
+    text-align: center !important;
+    font-size: 32px;
+}
