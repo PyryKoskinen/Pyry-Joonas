@@ -1,28 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Lähde seikkailuun tuntemattomaan! Tutustu yllätysmatkoihimme ja koe ainutlaatuisia elämyksiä.">
-    <title>Seikkailu tuntemattomaan - Yllätysmatkat</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Yhteydenotto nopeasti ja sujuvasti täältä</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
     <nav>
         <ul>
             <li><img src="Logo.jpg" alt="Logo" class="nav-logo"></li>
-            <li><a href="index.html" class="active">Etusivu</a></li>
+            <li><a href="index.html">Etusivu</a></li>
             <li><a href="lomakohteet.html">Lomakohteet</a></li>
-            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            <li><a href="yhteystiedot.html" class="active">Yhteystiedot</a></li>
         </ul>
     </nav>
 
-    <h1>Seikkailu tuntemattomaan!</h1>
-    <div class="hero-section">
-        <img src="airplane.jpg" alt="Lentokone yllätysmatkalle sinistä taivasta vasten" class="hero-image">
-        <div class="hero-text">
-            <a href="lomakohteet.html" class="hero-link">Elämys odottaa – Tutustu meidän seikkailuihin!</a>
+
+
+    <div class="contact-container">
+        <!-- Yhteystiedot vasemmalla -->
+        <div class="contact-info">
+      
+            <h3>Yhteystiedot</h3>
+            <p><strong>📍 Osoite:</strong> Lomatie 10, 00100 Helsinki</p>
+            <p><strong>📞 Puhelin:</strong> +358 40 123 4567</p>
+            <p><strong>✉️ Sähköposti:</strong> info@lomaseikkailut.fi</p>
+        </div>
+
+        <!-- Lomake oikealla -->
+        <div class="contact-form">
+            <h2>Ota yhteyttä</h2>
+            <p>Jos sinulla on kysyttävää tai haluat ottaa yhteyttä, voit käyttää alla olevaa lomaketta.</p>
+            
+            <form action="action_page.php">
+                <input type="text" id="fname" name="Etunimi" placeholder="Nimi" required>
+                <input type="email" id="email" name="email" placeholder="Sähköposti" required>
+                <textarea id="message" name="message" placeholder="Kirjoita viestisi tähän..." rows="5" required></textarea>
+
+                <button type="submit" class="submit-btn">Lähetä</button>
+            </form>
         </div>
     </div>
 
